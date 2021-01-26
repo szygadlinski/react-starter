@@ -42,8 +42,8 @@ class Column extends React.Component {
         </h3>
 
         <div>
-          {this.state.cards.map(({key, ...cardProps}) => (
-            <Card key={key} {...cardProps} />
+          {this.state.cards.map(({id, ...cardProps}) => (
+            <Card key={id} {...cardProps} />
           ))}
         </div>
 

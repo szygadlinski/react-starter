@@ -1,6 +1,7 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  listCreatorText: 'Add new list',
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
@@ -26,11 +27,11 @@ export const listData = {
       icon: 'book',
       cards: [
         {
-          key: 0,
+          id: 0,
           title: 'This Is Going to Hurt',
         },
         {
-          key: 1,
+          id: 1,
           title: 'Interpreter of Maladies',
         },
       ],
@@ -41,11 +42,11 @@ export const listData = {
       icon: 'film',
       cards: [
         {
-          key: 0,
+          id: 0,
           title: 'Harry Potter',
         },
         {
-          key: 1,
+          id: 1,
           title: 'Star Wars',
         },
       ],
@@ -56,11 +57,11 @@ export const listData = {
       icon: 'gamepad',
       cards: [
         {
-          key: 0,
+          id: 0,
           title: 'The Witcher',
         },
         {
-          key: 1,
+          id: 1,
           title: 'Skyrim',
         },
       ],
