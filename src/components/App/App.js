@@ -18,9 +18,9 @@ class App extends React.Component {
             title,
             description: '<p>I can do all the things!!!</p>',
             image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
-            columns: []
-          }
-        ]
+            columns: [],
+          },
+        ],
       }
     ));
   }
