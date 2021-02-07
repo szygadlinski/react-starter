@@ -13,6 +13,7 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  defaultSearchResultsTitle: 'Search results',
   logoIcon: 'cat',
 };
 
@@ -90,6 +91,18 @@ const lists = [
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-2',
+    title: 'Things to buy <sup>soon!</sup>',
+    description: 'Interesting things I want to have!',
+    image: 'https://images.pexels.com/photos/3697813/pexels-photo-3697813.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
+  },
+  {
+    id: 'list-3',
+    title: 'Things to learn <sup>soon!</sup>',
+    description: 'Interesting things I want to learn!',
+    image: 'https://images.pexels.com/photos/586043/pexels-photo-586043.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
   },
 ];
 
