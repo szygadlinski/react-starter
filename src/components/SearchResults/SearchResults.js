@@ -25,7 +25,7 @@ class SearchResults extends React.Component {
 
           <div>
             {cards.map(cardData => (
-              <Card key={cardData.id} {...cardData} />
+              <Card key={cardData.id} readOnly {...cardData} />
             ))}
           </div>
         </section>

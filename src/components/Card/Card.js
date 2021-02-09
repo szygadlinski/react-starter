@@ -8,10 +8,22 @@ class Card extends React.Component {
     title: PropTypes.string,
     id: PropTypes.string,
     index: PropTypes.number,
+    readOnly: PropTypes.bool,
   }
 
   render(){
-    const {title, id, index} = this.props;
+    const {title, id, index, readOnly} = this.props;
+
+    if (readOnly) {
+      return (
+        <article
+          className={styles.component}
+        >
+          <h4>{title}</h4>
+        </article>
+      );
+    }
+
     return (
       <Draggable draggableId={id} index={index}>
         {provided => (
