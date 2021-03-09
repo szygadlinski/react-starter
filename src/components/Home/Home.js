@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Home.scss';
 import ListLink from '../ListLink/ListLink.js';
+import Container from '../Container/Container';
 //import Creator from '../Creator/Creator.js';
 //import {settings} from '../../data/dataStore.js';
 
@@ -16,20 +17,22 @@ class Home extends React.Component {
     const {title, subtitle, lists} = this.props;
 
     return (
-      <main className={styles.component}>
-        <h1 className={styles.title}>{title}</h1>
-        <h2 className={styles.subtitle}>{subtitle}</h2>
+      <Container>
+        <main className={styles.component}>
+          <h1 className={styles.title}>{title}</h1>
+          <h2 className={styles.subtitle}>{subtitle}</h2>
 
-        {lists.map((listData) => (
-          <ListLink key={listData.id} {...listData} />
-        ))}
+          {lists.map((listData) => (
+            <ListLink key={listData.id} {...listData} />
+          ))}
 
-        {/*
-        <div>
-          <Creator text={settings.listCreatorText} action={title => this.addList(title)} />
-        </div>
-        */}
-      </main>
+          {/*
+            <div>
+            <Creator text={settings.listCreatorText} action={title => this.addList(title)} />
+            </div>
+          */}
+        </main>
+      </Container>
     );
   }
 }
